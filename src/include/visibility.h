@@ -65,10 +65,10 @@
  */
 #define system_exit exit
 
-#if defined(ENABLE_LOCKSTEP_SCHEDULER)
-
 #include <stdlib.h>
 #include <unistd.h>
+
+#if defined(ENABLE_LOCKSTEP_SCHEDULER)
 
 #define system_usleep usleep
 #pragma GCC poison usleep
